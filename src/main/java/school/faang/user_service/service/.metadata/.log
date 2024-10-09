@@ -1,0 +1,869 @@
+!SESSION 2024-10-03 09:23:56.746 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.12
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ru_RU
+Command-line arguments:  -data /Users/gs/IdeaProjects/CorporationX/user_service/src/main/java/school/faang/user_service/service
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.098
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.218
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.233
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.234
+!MESSAGE Initializing Java Language Server 1.40.0.202409261450
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.235
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.789
+!MESSAGE ProjectRegistryRefreshJob finished 553ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.802
+!MESSAGE Started org.eclipse.buildship.core 13ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.812
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.812
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.829
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.853
+!MESSAGE RepositoryRegistryUpdateJob finished 26ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:58.869
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:23:59.480
+!MESSAGE Default VM Install changed from  null to com.amazon.corretto.17-/Users/gs/Library/Java/JavaVirtualMachines/corretto-17.0.12/Contents/Home
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.084
+!MESSAGE No previous Gradle project at /Users/gs/IdeaProjects/CorporationX/user_service, it must be synchronized
+
+!ENTRY org.eclipse.buildship.core 2 1 2024-10-03 09:24:00.109
+!MESSAGE Synchronize project user_service failed due to an error while importing the root project.
+!STACK 0
+org.eclipse.buildship.core.internal.ImportRootProjectException: org.eclipse.buildship.core.internal.GradlePluginsRuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.run(ImportRootProjectOperation.java:53)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:230)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:197)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:105)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:86)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.startSynchronization(GradleProjectImporter.java:480)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.importDir(GradleProjectImporter.java:356)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.importToWorkspace(GradleProjectImporter.java:240)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:164)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:126)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:277)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.buildship.core.internal.GradlePluginsRuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.buildship.core.internal.workspace.DefaultWorkspaceOperations.createProject(DefaultWorkspaceOperations.java:128)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.importRootProject(ImportRootProjectOperation.java:95)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation$1.run(ImportRootProjectOperation.java:68)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2477)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.runInWorkspace(ImportRootProjectOperation.java:58)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.run(ImportRootProjectOperation.java:51)
+	... 16 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.buildship.core.internal.workspace.DefaultWorkspaceOperations.createProject(DefaultWorkspaceOperations.java:113)
+	... 22 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.116
+!MESSAGE Workspace initialized in 1289ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.127
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.144
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.155
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.156
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.157
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:00.178
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-10-03 09:24:01.099
+!MESSAGE Cannot download Gradle sha256 checksum: https://services.gradle.org/distributions-snapshots/gradle-8.8-20240325001802+0000-wrapper.jar.sha256
+!STACK 0
+java.io.FileNotFoundException: https://downloads.gradle.org/distributions-snapshots/gradle-8.8-20240325001802+0000-wrapper.jar.sha256
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2017)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1610)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.eclipse.jdt.ls.internal.gradle.checksums.DownloadChecksumJob.run(DownloadChecksumJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:01.171
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:01.841
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:01.842
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:01.844
+!MESSAGE Validated 1. Took 68 ms
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-10-03 09:24:02.041
+!MESSAGE Cannot download Gradle sha256 checksum: https://services.gradle.org/distributions-snapshots/gradle-8.7-20240321011441+0000-wrapper.jar.sha256
+!STACK 0
+java.io.FileNotFoundException: https://downloads.gradle.org/distributions-snapshots/gradle-8.7-20240321011441+0000-wrapper.jar.sha256
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2017)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1610)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.eclipse.jdt.ls.internal.gradle.checksums.DownloadChecksumJob.run(DownloadChecksumJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:42.346
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:42.353
+!MESSAGE Reconciled 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:42.793
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:42.794
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:42.794
+!MESSAGE Validated 1. Took 35 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:43.753
+!MESSAGE Reconciled 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:43.886
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:43.915
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.377
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.378
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.378
+!MESSAGE Validated 1. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.399
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.555
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.571
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.995
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.995
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:44.996
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:46.117
+!MESSAGE Reconciled 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:46.144
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:46.248
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:46.551
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:46.701
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:46.880
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:47.118
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:47.491
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:47.654
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:47.840
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.052
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.065
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.319
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.333
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.768
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.769
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.769
+!MESSAGE Validated 1. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.778
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:48.845
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:49.155
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:49.286
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:49.486
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:49.615
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:50.036
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:50.037
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:24:50.038
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:13.822
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:13.847
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:14.247
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:14.247
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:14.248
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:27.719
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:27.726
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:27.943
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:28.372
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:28.373
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:28.373
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:28.832
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:29.250
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:29.251
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:29.251
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:32.057
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:32.475
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:32.476
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:32.476
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:35.494
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:35.914
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:35.914
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:35.915
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:36.030
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:36.044
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:36.462
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:36.463
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:36.463
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:36.868
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.055
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.198
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.276
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.620
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.620
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.621
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:37.816
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:38.005
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:38.019
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:38.337
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:38.468
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:38.839
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:38.841
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:39.262
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:39.263
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:39.263
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:40.500
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:40.512
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:40.930
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:40.931
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:40.931
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:41.160
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:41.290
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:41.579
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:41.579
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:41.579
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:43.087
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:43.356
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:43.772
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:43.772
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:43.773
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:52.322
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:52.536
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:52.680
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:52.777
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:52.803
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:53.239
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:53.368
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:53.626
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:53.631
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:54.044
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:54.046
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:25:54.046
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:26:00.105
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:26:00.118
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:26:00.145
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:26:00.151
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+!SESSION 2024-10-03 09:36:25.823 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.12
+java.vendor=Amazon.com Inc.
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ru_RU
+Command-line arguments:  -data /Users/gs/IdeaProjects/CorporationX/user_service/src/main/java/school/faang/user_service/service
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:27.238
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:27.374
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:27.386
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:27.389
+!MESSAGE Initializing Java Language Server 1.40.0.202409261450
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:27.390
+!MESSAGE Started org.eclipse.m2e.core 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.088
+!MESSAGE ProjectRegistryRefreshJob finished 697ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.104
+!MESSAGE Started org.eclipse.buildship.core 16ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.117
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.118
+!MESSAGE Non-Static Commands: [java.project.import, java.project.changeImportedProjects, java.navigate.openTypeHierarchy, java.project.resolveStackTraceLocation, java.edit.handlePasteEvent, java.edit.stringFormatting, java.project.getSettings, java.project.resolveWorkspaceSymbol, java.project.upgradeGradle, java.project.createModuleInfo, java.vm.getAllInstalls, java.edit.organizeImports, java.project.refreshDiagnostics, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.updateSettings, java.project.getAll, java.reloadBundles, java.project.isTestFile, java.project.resolveText, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.edit.smartSemicolonDetection, java.project.updateSourceAttachment, java.project.updateClassPaths, java.decompile, java.protobuf.generateSources, java.project.resolveSourceAttachment, java.project.updateJdk, java.project.addToSourcePath, java.completion.onDidSelect]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.134
+!MESSAGE RepositoryRegistryUpdateJob finished 0ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.137
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.155
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.837
+!MESSAGE No previous Gradle project at /Users/gs/IdeaProjects/CorporationX/user_service, it must be synchronized
+
+!ENTRY org.eclipse.buildship.core 2 1 2024-10-03 09:36:28.854
+!MESSAGE Synchronize project user_service failed due to an error while importing the root project.
+!STACK 0
+org.eclipse.buildship.core.internal.ImportRootProjectException: org.eclipse.buildship.core.internal.GradlePluginsRuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.run(ImportRootProjectOperation.java:53)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.runInToolingApi(DefaultGradleBuild.java:230)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2482)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild$SynchronizeOperation.run(DefaultGradleBuild.java:197)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:105)
+	at org.eclipse.buildship.core.internal.DefaultGradleBuild.synchronize(DefaultGradleBuild.java:86)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.startSynchronization(GradleProjectImporter.java:480)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.importDir(GradleProjectImporter.java:356)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.importToWorkspace(GradleProjectImporter.java:240)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:164)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:126)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:277)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.buildship.core.internal.GradlePluginsRuntimeException: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.buildship.core.internal.workspace.DefaultWorkspaceOperations.createProject(DefaultWorkspaceOperations.java:128)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.importRootProject(ImportRootProjectOperation.java:95)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation$1.run(ImportRootProjectOperation.java:68)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2457)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2477)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.runInWorkspace(ImportRootProjectOperation.java:58)
+	at org.eclipse.buildship.core.internal.workspace.ImportRootProjectOperation.run(ImportRootProjectOperation.java:51)
+	... 16 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.buildship.core.internal.workspace.DefaultWorkspaceOperations.createProject(DefaultWorkspaceOperations.java:113)
+	... 22 more
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.862
+!MESSAGE Workspace initialized in 729ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.873
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.923
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.923
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:28.925
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:29.829
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:30.512
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:30.514
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:30.517
+!MESSAGE Validated 1. Took 83 ms
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-10-03 09:36:30.653
+!MESSAGE Cannot download Gradle sha256 checksum: https://services.gradle.org/distributions-snapshots/gradle-8.8-20240325001802+0000-wrapper.jar.sha256
+!STACK 0
+java.io.FileNotFoundException: https://downloads.gradle.org/distributions-snapshots/gradle-8.8-20240325001802+0000-wrapper.jar.sha256
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2017)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1610)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.eclipse.jdt.ls.internal.gradle.checksums.DownloadChecksumJob.run(DownloadChecksumJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-10-03 09:36:31.576
+!MESSAGE Cannot download Gradle sha256 checksum: https://services.gradle.org/distributions-snapshots/gradle-8.7-20240321011441+0000-wrapper.jar.sha256
+!STACK 0
+java.io.FileNotFoundException: https://downloads.gradle.org/distributions-snapshots/gradle-8.7-20240321011441+0000-wrapper.jar.sha256
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:2017)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1610)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.eclipse.jdt.ls.internal.gradle.checksums.DownloadChecksumJob.run(DownloadChecksumJob.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:41.602
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:41.613
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:42.058
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:42.059
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:42.059
+!MESSAGE Validated 1. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:42.678
+!MESSAGE Reconciled 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:43.064
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:43.119
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:43.120
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:43.120
+!MESSAGE Validated 1. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:44.467
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:44.671
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:45.102
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:45.103
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:45.103
+!MESSAGE Validated 1. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:47.486
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:47.803
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:47.945
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:48.225
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:48.226
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:48.227
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:48.543
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:48.560
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:48.898
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:49.027
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:49.263
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:49.271
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:49.684
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:49.685
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:49.686
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:54.953
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:55.082
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:55.478
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:55.479
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:55.485
+!MESSAGE Validated 1. Took 74 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:55.708
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:56.175
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:56.176
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:36:56.177
+!MESSAGE Validated 1. Took 63 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:02.748
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:02.939
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:03.069
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:03.492
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:03.492
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:03.493
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:04.392
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:04.527
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:04.813
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:04.814
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:04.814
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:05.659
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:05.905
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:06.033
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:06.449
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:06.449
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:06.450
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:07.588
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:07.748
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:07.937
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:08.013
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:08.082
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:08.096
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:08.402
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:08.531
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:08.884
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:09.012
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:09.434
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:09.434
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:37:09.435
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:16.389
+!MESSAGE Reconciled 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:16.819
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:16.820
+!MESSAGE 2 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:16.821
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:17.081
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:17.499
+!MESSAGE begin problem for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:17.500
+!MESSAGE 1 problems reported for /UserService.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:17.500
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:18.789
+!MESSAGE >> shutdown
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:18.804
+!MESSAGE >> exit
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:18.836
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-10-03 09:39:18.841
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:

@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+/Users/gs/IdeaProjects/CorporationX/user_service/src/main/java/school/faang/user_service/service/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+3512664730.index
