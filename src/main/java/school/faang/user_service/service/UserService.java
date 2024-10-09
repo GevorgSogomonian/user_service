@@ -68,7 +68,6 @@ public class UserService {
         if (userAvatar == null) {
             avatarService.setRandomAvatar(user);
         } else {
-            // todo: Gevorg's part
             profilePicEventPublisher.publish(new ProfilePicEvent(user.getId(), userAvatar.getOriginalFilename()));
         }
         return userMapper.toDto(userRepository.save(user));
@@ -91,7 +90,6 @@ public class UserService {
         if (multipartFile == null) {
             avatarService.setRandomAvatar(user);
         } else {
-            // todo: Добавление аватара пользователя; Will be done by Gevorg
             profilePicEventPublisher.publish(new ProfilePicEvent(userId, multipartFile.getOriginalFilename()));
         }
         userRepository.save(user);
