@@ -7,9 +7,7 @@ import school.faang.user_service.dto.recommendation.RejectionDto;
 import school.faang.user_service.dto.recommendation.RequestFilterDto;
 import school.faang.user_service.entity.recommendation.RecommendationRequest;
 import school.faang.user_service.mapper.recommendation.RecommendationRequestMapper;
-import school.faang.user_service.repository.SkillRepository;
 import school.faang.user_service.repository.UserRepository;
-import school.faang.user_service.repository.recommendation.RecommendationRepository;
 import school.faang.user_service.repository.recommendation.RecommendationRequestRepository;
 import school.faang.user_service.repository.recommendation.SkillRequestRepository;
 import school.faang.user_service.validator.recommendation.RecommendationRequestDtoValidator;
@@ -25,9 +23,7 @@ import static school.faang.user_service.entity.RequestStatus.PENDING;
 @RequiredArgsConstructor
 public class RecommendationRequestService {
     public final RecommendationRequestRepository recommendationRequestRepository;
-    public final RecommendationRepository recommendationRepository;
     public final SkillRequestRepository skillRequestRepository;
-    public final SkillRepository skillRepository;
     public final RecommendationRequestMapper recommendationRequestMapper;
     public final UserRepository userRepository;
     public final List<RequestFilter> requestFilters;

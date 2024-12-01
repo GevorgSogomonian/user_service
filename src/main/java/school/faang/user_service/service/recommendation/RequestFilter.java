@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 @Component
 public interface RequestFilter {
-    public boolean isApplicable(RequestFilterDto filter);
+    boolean isApplicable(RequestFilterDto filter);
 
-    public void apply(Stream<RecommendationRequest> recommendationRequests, RequestFilterDto filter);
+    void apply(Stream<RecommendationRequest> recommendationRequests, RequestFilterDto filter);
 }
